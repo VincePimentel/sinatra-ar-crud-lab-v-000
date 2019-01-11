@@ -8,11 +8,11 @@ class ApplicationController < Sinatra::Base
     set :views, "app/views"
   end
 
-  get "/" do
-    @articles = Article.all
-
-    erb :index
-  end
+  # get "/" do
+  #   @articles = Article.all
+  #
+  #   erb :index
+  # end
 
   get "/index" do
     @articles = Article.all
