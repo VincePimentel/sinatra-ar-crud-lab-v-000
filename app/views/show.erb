@@ -1,4 +1,4 @@
-<form class="" action="/models/<%= @article.id %>/delete" method="post">
+<form class="" action="/articles/<%= @article.id %>/delete" method="post">
   <input type="hidden" id="hidden" name="_method" value="DELETE">
   <p><a href="/">HOME</a> | <a href="/articles/<%= @article.id %>/edit">EDIT</a> | <input type="submit" name="" value="Delete"></p>
   <h1><%= @article.title %></h1>
