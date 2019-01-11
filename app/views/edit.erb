@@ -1,6 +1,6 @@
 <form class="" action="/articles/<%= @article.id %>" method="POST">
-  <input type="hidden" id="hidden" name="_method" value="PATCH">
   <h1>Edit Article</h1>
+  <input type="hidden" id="hidden" name="_method" value="PATCH">
   <p>
     <label for="title">Title: </label><input type="text" id="title" name="title" value="<%= @article.title %>">
   </p>
@@ -8,6 +8,6 @@
     <label for="content">Content: </label>
     <textarea id="content" name="content" rows="8" cols="20"><%= @article.content %></textarea>
   </p>
-  
+
   <input type="submit" id="submit" value="Submit">
 </form>
