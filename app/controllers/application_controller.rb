@@ -42,6 +42,6 @@ class ApplicationController < Sinatra::Base
     article.content = params[:content]
     article.save
 
-    erb :show
+    redirect to "/articles/#{params[:id]}"
   end
 end
