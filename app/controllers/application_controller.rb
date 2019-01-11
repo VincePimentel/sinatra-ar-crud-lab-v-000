@@ -9,6 +9,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    @articles = Article.all
   end
 
   get "/articles/new" do
