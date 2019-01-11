@@ -4,6 +4,6 @@
 
 <ol>
   <% @articles.each do |article, i| %>
-    <li><a href="/articles/<% article.id %>"><%= article.title %></a></li>
+    <li><a href="/articles/<%= article.id %>"><%= article.title %></a></li>
   <% end %>
 </ol>
