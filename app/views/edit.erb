@@ -5,7 +5,7 @@
   </p>
   <p>
     <label for="content">Content: </label>
-    <textarea id="content" name="content" rows="8" cols="20" value="<%= @article.content %>"></textarea>
+    <textarea id="content" name="content" rows="8" cols="20"><%= @article.content %></textarea>
   </p>
   <input type="hidden" id="hidden" name="_method" value="patch">
   <input type="submit" id="submit" value="Submit">
