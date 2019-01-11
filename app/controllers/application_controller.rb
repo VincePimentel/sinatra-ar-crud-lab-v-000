@@ -23,6 +23,6 @@ class ApplicationController < Sinatra::Base
 
     @articles = Article.all
 
-    erb :index
+    erb :show
   end
 end
